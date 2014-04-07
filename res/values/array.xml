@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="seats">
+        <item>Seat #1</item>
+        <item>Seat #2</item>
+        <item>Seat #3</item>
+        <item>Seat #4</item>
+        <item>Seat #5</item>
+        <item>Seat #6</item>
+    </array>
+
+</resources>

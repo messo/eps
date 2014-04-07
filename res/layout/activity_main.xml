@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:atswidget="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <com.freddymartens.android.widgets.Gauge
+            android:id="@+id/meter1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="2px"
+            atswidget:incrementPerLargeNotch="10"
+            atswidget:incrementPerSmallNotch="1"
+            atswidget:lowerTitle=""
+            atswidget:rangeErrorColor="0x9fff0000"
+            atswidget:rangeErrorMaxValue="90"
+            atswidget:rangeErrorMinValue="100"
+            atswidget:rangeOkColor="0x9f00ff00"
+            atswidget:rangeOkMaxValue="75"
+            atswidget:rangeOkMinValue="0"
+            atswidget:rangeWarningColor="0x9fff8800"
+            atswidget:rangeWarningMaxValue="90"
+            atswidget:rangeWarningMinValue="75"
+            atswidget:scaleCenterValue="50"
+            atswidget:scaleColor="0x9f004d0f"
+            atswidget:scaleMaxValue="100"
+            atswidget:scaleMinValue="0"
+            atswidget:showGauge="true"
+            atswidget:showHand="true"
+            atswidget:showRange="true"
+            atswidget:totalNotches="120"
+            atswidget:unitTitle="%"
+            atswidget:upperTitle="Measured light"
+             />
+
+            <SeekBar
+                android:id="@+id/seekBar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="100"
+                android:layout_marginTop="15px"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:text="Reset Override" />
+
+</RelativeLayout>
